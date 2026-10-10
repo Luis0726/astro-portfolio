@@ -1,0 +1,39 @@
+---
+import {
+  Code,
+  BrainCircuit,
+  Cloud,
+  type AstroComponent,
+} from "@lucide/astro";
+
+type PillsItems = {
+  label: string;
+  icon: AstroComponent;
+};
+
+const pillItems: PillsItems[] = [
+  {
+    label: "Full-Stack Developer",
+    icon: Code,
+  },
+  {
+    label: "Machine Learning",
+    icon: BrainCircuit,
+  },
+  {
+    label: "Cloud Architech",
+    icon: Cloud,
+  }
+];
+---
+
+<ul class="flex items-baseline gap-4 mt-8">
+  {
+    pillItems.map((item) => (
+      <li class="px-2 py-1.5 bg-black text-white rounded-xl flex items-center gap-2">
+        <item.icon size={22}/>
+        <span>{item.label}</span>
+      </li>
+    ))
+  }
+</ul>

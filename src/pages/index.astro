@@ -1,6 +1,16 @@
 ---
 import BaseLayout from '../layouts/layout.astro'
+import Home from '../components/sections/Home.astro'
+import AboutMe from '../components/sections/AboutMe.astro'
+import Projects from '../components/sections/Projects.astro'
 ---
 
 <BaseLayout title="Portfolio | Luis Castro">
+    <div class="max-w-3xl mx-auto">
+        <Home/>
+        <main>
+            <AboutMe/>
+            <Projects/>
+        </main>
+    </div>
 </BaseLayout> 
