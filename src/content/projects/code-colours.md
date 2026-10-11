@@ -4,4 +4,4 @@ description: "Genera paletas de colores con IA para integrarlas en tus proyectos
 tags: ["Next.js", "Groq", "Tailwind CSS", "Chroma-js", "react-colorful"]
 ---
 
-stack-analyzer
+code-colours
